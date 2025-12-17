@@ -42,17 +42,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-l3-lat/devfreq          u
 genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-llcc-lat/devfreq        u:object_r:vendor_sysfs_devfreq:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,cdsp-cdsp-l3-lat/devfreq         u:object_r:vendor_sysfs_devfreq:s0
 
-# DCVS nodes
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq          u:object_r:vendor_sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw/devfreq          u:object_r:vendor_sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-l3-lat/devfreq          u:object_r:vendor_sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-llcc-lat/devfreq        u:object_r:vendor_sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-ddr-latfloor/devfreq    u:object_r:vendor_sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-ddr-latfloor/devfreq    u:object_r:vendor_sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-l3-lat/devfreq          u:object_r:vendor_sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-llcc-lat/devfreq        u:object_r:vendor_sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cdsp-cdsp-l3-lat/devfreq         u:object_r:vendor_sysfs_devfreq:s0
-
 #qdss sysfs-node
 genfscon sysfs /devices/platform/soc/6047000.tmc/coresight-tmc-etf u:object_r:vendor_sysfs_qdss_dev:s0
 genfscon sysfs /devices/platform/soc/6048000.tmc/coresight-tmc-etr u:object_r:vendor_sysfs_qdss_dev:s0
@@ -76,7 +65,6 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,usb-pdphy@1700/usbpd/usbpd0 u:object_r:vendor_sysfs_usbpd_device:s0
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-0008/a88000.i2c:qcom,smb1355@8:qcom,smb1355-charger@1000/power_supply/parallel u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-000c/a88000.i2c:qcom,smb1355@c:qcom,smb1355-charger@1000/power_supply/parallel u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /class/qcom-battery u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /class/charge_pump u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000/leds/red u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000/leds/green u:object_r:vendor_sysfs_graphics:s0
